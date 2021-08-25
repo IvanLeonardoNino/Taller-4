@@ -1,6 +1,6 @@
 # Taller-4
 <p> Cuarto taller programación en la web <p>
-<p> Integrantes:<p>
+<h1> Integrantes: <h1>
 
 <p> Cristian David Tafur campo 2191970 <p>
 <p> Johan Sebastián Cruz Rueda 2191974 <p>
