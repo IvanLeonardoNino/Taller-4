@@ -5,16 +5,24 @@
     <meta name="descripcion" content="pagina de registro" />
     <meta name="autores" content="Cruz, Cristian,Ivan" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
-
-<body>
-    <form action="" method="post">
-        <label for="Formulario" method="POST" action=""><br>
-            <label for="id_usr">Id Usuario</label><br>
-            <input type="text" name="id_usr" id="id_usr" size="25"><br>
-
-            <label for="id_pais">Seleccione su pais</label><br>
-            <select name="pais" id="id_pais">
+<div class="min-h-screen flex items-center justify-center bg-gray-700">  
+</body>
+<div class="bg-white p-8 rounded font-serif text-center text-gray-900">
+<form action="" method="post" class="space-y-3">
+  <div class="text-4xl">
+    <h1 class="">Formulario de Registro</h1>
+    </div>
+ 
+<div>
+       <label for="id_usr">Id Usuario</label><br>
+            <input type="text" name="id_usr" maxlength="20" size="25" class="border border-gray-500">
+</div>
+<div>
+<label for="id_pais">Seleccione su país</label><br>
+            <select name="pais"class="border border-gray-500">
                 <option value="Elegir" id="AF">Elegir opción</option>
                 <option value="Afganistán" id="AF">Afganistán</option>
                 <option value="Albania" id="AL">Albania</option>
@@ -84,7 +92,6 @@
                 <option value="Estados Unidos" id="US">Estados Unidos</option>
                 <option value="Estonia" id="EE">Estonia</option>
                 <option value="c" id="ET">Etiopía</option>
-                <option value="Ex-República Yugoslava de Macedonia" id="MK">Ex-República Yugoslava de Macedonia</option>
                 <option value="Filipinas" id="PH">Filipinas</option>
                 <option value="Finlandia" id="FI">Finlandia</option>
                 <option value="Francia" id="FR">Francia</option>
@@ -116,17 +123,14 @@
                 <option value="Irlanda" id="IE">Irlanda</option>
                 <option value="Isla Bouvet" id="BV">Isla Bouvet</option>
                 <option value="Isla Christmas" id="CX">Isla Christmas</option>
-                <option value="Isla Heard e Islas McDonald" id="HM">Isla Heard e Islas McDonald</option>
                 <option value="Islandia" id="IS">Islandia</option>
                 <option value="Islas Caimán" id="KY">Islas Caimán</option>
                 <option value="Islas Cook" id="CK">Islas Cook</option>
                 <option value="Islas de Cocos o Keeling" id="CC">Islas de Cocos o Keeling</option>
                 <option value="Islas Faroe" id="FO">Islas Faroe</option>
                 <option value="Islas Fiyi" id="FJ">Islas Fiyi</option>
-                <option value="Islas Malvinas Islas Falkland" id="FK">Islas Malvinas Islas Falkland</option>
                 <option value="Islas Marianas del norte" id="MP">Islas Marianas del norte</option>
                 <option value="Islas Marshall" id="MH">Islas Marshall</option>
-                <option value="Islas menores de Estados Unidos" id="UM">Islas menores de Estados Unidos</option>
                 <option value="Islas Palau" id="PW">Islas Palau</option>
                 <option value="Islas Salomón" d="SB">Islas Salomón</option>
                 <option value="Islas Tokelau" id="TK">Islas Tokelau</option>
@@ -198,7 +202,6 @@
                 <option value="República Centroafricana" id="CF">República Centroafricana</option>
                 <option value="República Checa" id="CZ">República Checa</option>
                 <option value="República de Sudáfrica" id="ZA">República de Sudáfrica</option>
-                <option value="República Democrática del Congo Zaire" id="CD">República Democrática del Congo Zaire</option>
                 <option value="República Dominicana" id="DO">República Dominicana</option>
                 <option value="Reunión" id="RE">Reunión</option>
                 <option value="Ruanda" id="RW">Ruanda</option>
@@ -209,7 +212,6 @@
                 <option value="San Kitts y Nevis" id="KN">San Kitts y Nevis</option>
                 <option value="San Marino" id="SM">San Marino</option>
                 <option value="San Pierre y Miquelon" id="PM">San Pierre y Miquelon</option>
-                <option value="San Vicente e Islas Granadinas" id="VC">San Vicente e Islas Granadinas</option>
                 <option value="Santa Helena" id="SH">Santa Helena</option>
                 <option value="Santa Lucía" id="LC">Santa Lucía</option>
                 <option value="Santo Tomé y Príncipe" id="ST">Santo Tomé y Príncipe</option>
@@ -231,8 +233,6 @@
                 <option value="Taiwán" id="TW">Taiwán</option>
                 <option value="Tanzania" id="TZ">Tanzania</option>
                 <option value="Tayikistán" id="TJ">Tayikistán</option>
-                <option value="Territorios británicos del océano Indico" id="IO">Territorios británicos del océano Indico</option>
-                <option value="Territorios franceses del sur" id="TF">Territorios franceses del sur</option>
                 <option value="Timor Oriental" id="TP">Timor Oriental</option>
                 <option value="Togo" id="TG">Togo</option>
                 <option value="Tonga" id="TO">Tonga</option>
@@ -252,24 +252,36 @@
                 <option value="Yemen" id="YE">Yemen</option>
                 <option value="Zambia" id="ZM">Zambia</option>
                 <option value="Zimbabue" id="ZW">Zimbabue</option>
-            </select><br>
-
-            <label for="Nombre">Usuario</label><br>
-            <input type="text" name="nombre" id="nombre" maxlength="25" size="25"><br>
-            <label for="Apellido">Apellido</label><br>
-            <input type="text" name="nombre" id="apellido" maxlength="25" size="25"><br>
-            <label for="direccion">Direccion</label><br>
-            <input type="text" name="direccion" id="direccion" maxlength="25" size="25"><br>
-            <label for="ccusuario">Usuario</label><br>
-            <input type="text" name="ccusuario" id="ccusuario" maxlength="20" size="25"><br>
-            <label for="ccpaswd">Contraseña</label><br>
-            <input type="password" name="ccpaswd" id="ccpaswd" size="25"><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email" maxlength="120" size="25"><br>
-            <label for="telefono">Telefono</label><br>
-            <input type="text" name="telefono" id="telefono" maxlength="20" size="25"><br>
-            <button name="Registrar" type="submit">Registrar</button><br>
-        </label>
-    </form>
+            </select>
+</div>
+<div >
+              <label for="Nombre">Nombre</label><br>
+            <input type="text" name="nombre"  maxlength="25" size="25" class="border border-gray-500"><br>
+</div>
+<div >
+              <label for="Apellido">Apellido</label><br>
+            <input type="text" name="nombre"  maxlength="25" size="25" class="border border-gray-500"><br>
+</div>
+<div >
+              <label for="direccion">Dirección</label><br>
+            <input type="text" name="direccion"  maxlength="25" size="25" class="border border-gray-500"><br>
+</div>
+<div >
+              <label for="ccusuario">Usuario</label><br>
+            <input type="text" name="ccusuario"  maxlength="20" size="25" class="border border-gray-500"><br>
+</div>
+<div >
+              <label for="ccpaswd">Contraseña</label><br>
+            <input type="password" name="ccpaswd"  size="25" class="border border-gray-500"><br>
+</div>
+<div >
+              <label for="email">Email</label><br>
+            <input type="email" name="email"maxlength="120" size="25" class="border border-gray-500"><br>
+</div>
+<div class="fo">
+              <label for="telefono">Teléfono </label><br>
+            <input type="text" name="telefono"  maxlength="20" size="25" class="border border-gray-500"><br>
+</div>
+      <button  class="block-center w-full bg-gray-500 hover:bg-gray-400 p-4 rounded text-gray-900 hover:text-gray-800 transition duration-300">Registrarse</button>
 </body>
 </html>
