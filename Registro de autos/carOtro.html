@@ -9,9 +9,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="nombre" content="Registro de autos ">
     <title>Registro Autos</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    </enlace>
 </head>
 
 <body>
+    <form class="pure-form pure-form-aligned" id="formOtCar" method="POST" action="">
+        <fieldset>
+            <legend>Registro de autos</legend>
+            <div class="pure-control-group">
+                <label for="id_coche">Digite la id del coche</label>
+                <input type="text" name="id_coche" id="id_coche">
+            </div>
+
+            <div class="pure-control-group">
+                <label for="id_movidoa">Tipo de combustible</label>
+                <select name="id_movidoa" id="id_movidoa">
+                    <option value="">--</option>
+                    <option value="gas natural">Gas natural</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diésel">Diésel</option>
+                    <option value="hidrógeno">Hidrógeno</option>
+                    <option value="biodiesel">Biodiesel</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="GLP">GLP</option>
+                </select>
+            </div>
+            
+            <div class="pure-control-group">
+
+            </div>
+        </fieldset>
+    </form>
 
 </body>
 
