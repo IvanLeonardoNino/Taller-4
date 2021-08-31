@@ -21,19 +21,20 @@
 </head>
 
 <body class="bg-dark">
-    <div class="row">
-        <div class=" col-sm-2 col-md-3 col-lg-3" col></div>
-        <div class="bg-light col-sm-8 col-md-6 col-lg-6">
-            <form id="form1" method="POST" action="">
+    <div class="row justify-content-center">
+
+        <div class="border border-success bg-light col-sm-8 col-md-6 col-lg-6">
+            <h2 class="text-primary text-center">Registro de usuarios</h2>
+            <form id="formbBooU" method="POST" action="">
                 <div class="form-group">
-                    <label for="id_user">Digite su id</label>
+                    <label for="id_user"><strong>Digite su id</strong></label>
                     <input class="form-control" type="text" id="id_user" name="id_user" maxlength="11">
                 </div>
 
                 <div class="form-group">
-                    <label for="id_pais">Seleccione la id de su pais</label>
+                    <label for="id_pais"><strong>Seleccione la id de su pais</strong></label>
                     <select class="form-control" id="id_pais">
-                        <option>Elegir opción</option>
+                        <option><small class="text-muted">Elegir opción</small></option>
                         <option value="Afganistán" id="AF">Afganistán</option>
                         <option value="Albania" id="AL">Albania</option>
                         <option value="Alemania" id="DE">Alemania</option>
@@ -266,48 +267,48 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre"><strong>Nombre</strong></label>
                     <input type="text" class="form-control" id="nombre" name="nombre" maxlength="25">
                 </div>
 
                 <div class="form-group">
-                    <label for="apellido">Apellido</label>
+                    <label for="apellido"><strong>Apellido</strong></label>
                     <input type="text" class="form-control" id="apellido" name="apellido" maxlength="25">
                 </div>
 
                 <div class="form-group">
-                    <label for="direccion">Dirección</label>
+                    <label for="direccion"><strong>Dirección</strong></label>
                     <input type="text" class="form-control" id="direccion" name="direccion" maxlength="45">
 
                 </div>
 
                 <div class="form-group">
-                    <label for="ccusuario">CC Usuario</label>
+                    <label for="ccusuario"><strong>CC Usuario</strong></label>
                     <input type="text" class="form-control" id="ccusuario" name="ccusuario" maxlength="20">
 
                 </div>
 
                 <div class="form-group">
-                    <label for="ccpaswd">Contraseña</label>
+                    <label for="ccpaswd"><strong>Contraseña</strong></label>
                     <input type="password" class="form-control" id="ccpaswd" name="ccpaswd">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email"><strong>Email</strong> </label>
                     <input type="text" class="form-control" id="email" name="email" maxlength="120">
                 </div>
 
                 <div class="form-group">
-                    <label for="telefono">telefono</label>
+                    <label for="telefono"><strong>telefono</strong></label>
                     <input type="text" class="form-control" name="telefono" id="telefono">
                 </div>
 
                 <br>
-                <button class="btn btn-sm btn-block btn-primary">Registrar</button>
+                <button class="btn btn-sm btn-block btn-primary"><strong>Registrar</strong></button>
             </form>
         </div>
 
-        <div class=" col-sm-2 col-md-3 col-lg-3"></div>
+
     </div>
 
 </body>
