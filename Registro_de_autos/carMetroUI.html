@@ -20,14 +20,14 @@
 </head>
 
 <body class="bg-dark">
-
+<div class="container">
     <div class="row flex-justify-center">
-        <div class="text-cap bg-white border bd-red border-size-3 cell-sm-7 cell-md-5 cell-lg-4">
+        <div class="text-cap bg-white border bd-red border-size-3 cell-sm-8 cell-md-6 cell-lg-4">
             <h2 class="text-center">Registro de autos</h2>
             <form class="" id="formOtCar" method="POST" action="">
 
                 <div class="form-group ">
-                    <label for="id_coche"><strong>Digite la id del coche</strong></label>
+                    <label for="id_coche"><strong>Digite la id del coche</strong></label><br>
                     <input data-role="input" type="text" name="id_coche" id="id_coche">
 
                 </div>
@@ -69,64 +69,76 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="id_estado"><strong></strong></label><br>
+                    <label for="id_estado"><strong>Estado del auto</strong></label><br>
                     <select data-role="select" name="id_estado" id="id_estado">
                         <option>--</option>
+                        <option value="usado">Usado</option>
+                        <option value="nuevo">Nuevo</option>
                     </select>
 
                 </div>
 
                 <div class="form-group">
-                    <label for="id_marca"><strong></strong></label><br>
+                    <label for="id_marca"><strong>Marca del coche</strong></label><br>
                     <select name="id_marca" id="id_marca">
                         <option>--</option>
+                        <option value="renault">Renault</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="kia">Kia</option>
+                        <option value="toyoya">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="ford">Ford</option>
+                        <option value="hyundai">Hyundai</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="id_usr"><strong></strong></label><br>
+                    <label for="id_usr"><strong>USR</strong></label><br>
                     <select name="id_usr" id="id_usr">
                         <option>--</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="modelo"><strong>Modelo</strong></label>
+                    <label for="modelo"><strong>Modelo</strong></label><br>
                     <input type="text" name="modelo" id="modelo" data-role="input">
                 </div>
 
                 <div class="form-group">
-                    <label for="anio"><strong>Año</strong></label>
+                    <label for="anio"><strong>Año</strong></label><br>
                     <input type="text" name="anio" id="anio" data-role="input">
                 </div>
 
                 <div class="form-group">
-                    <label for="detalle"><strong>Detalles</strong></label>
+                    <label for="detalle"><strong>Detalles</strong></label><br>
                     <input type="text" name="detalle" id="detalle" data-role="input">
                 </div>
 
                 <div class="form-group">
-                    <label for="caja"><strong>Caja</strong></label>
+                    <label for="caja"><strong>Caja</strong></label><br>
                     <input type="text" name="caja" id="caja" data-role="input">
                 </div>
 
                 <div class="form-group">
-                    <label for="motor"><strong>Motor</strong></label>
+                    <label for="motor"><strong>Motor</strong></label><br>
                     <input type="text" name="motor" id="motor" data-role="input">
                 </div>
 
                 <div class="form-group">
-                    <label for="fechapub"><strong>Fecha publicacion</strong></label>
+                    <label for="fechapub"><strong>Fecha publicacion</strong></label><br>
                     <input type="text" name="fechapub" id="fechapub" data-role="input">
                 </div>
 
                 <div class="form-group">
-                    <label for="precio"><strong>Precio</strong></label>
+                    <label for="precio"><strong>Precio</strong></label><br>
                     <input type="text" name="precio" id="precio" data-role="input">
                 </div>
 
                 <div class="form-group">
-                    <label for="moneda"><strong>Moneda</strong></label>
+                    <label for="moneda"><strong>Moneda</strong></label><br>
                     <input type="text" name="moneda" id="moneda" data-role="input">
                 </div>
 
@@ -163,7 +175,7 @@
             </form>
         </div>
     </div>
-
+</div>
 </body>
 
 </html>
