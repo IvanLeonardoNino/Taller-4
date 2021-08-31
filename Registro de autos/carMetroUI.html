@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="descripcion" content="pagina de registro" />
+    <meta name="autores" content="Ivan, Cruz, Cristian" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="nombre" content="Registro de autos ">
+    <title>Registro Autos</title>
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <link href="path_to_metro/metro.css" rel="stylesheet">
+    <link href="path_to_metro/metro-animation.css" rel="stylesheet">
+    <link href="metro-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <div class="row ">
+        <div class="bg-white border bd-cyan border-size-5 cell-4 offset-4">
+        <form class="" id="formOtCar" method="POST" action="">
+        
+            <div class="form-group">
+                <label for="id_coche">Digite la id del coche</label>
+                <input type="text" name="id_coche" id="id_coche">
+                
+            </div>
+
+            <div class="form-group">
+                <label for="id_movidoa">Tipo de combustible</label>
+                <select data-role="select" name="id_movidoa" id="id_movidoa">
+                    <option value="">--</option>
+                    <option value="gas natural">Gas natural</option>
+                    <option value="gasolina">Gasolina</option>
+                    <option value="diésel">Diésel</option>
+                    <option value="hidrógeno">Hidrógeno</option>
+                    <option value="biodiesel">Biodiesel</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="GLP">GLP</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="id_tipocoche">Tipo de coche <span class="mif-automobile"></span></label>
+                <select data-role="select"  name="id_tipocoche" id="id_tipocoche">
+                    <option >--</option>
+                    <option value="Urbano">Urbano</option>
+                    <option value="Subcompacto">Subcompacto</option>
+                    <option value="Hatchback ">Hatchback / compacto</option>
+                    <option value="Familiar">Familiar</option>
+                    <option value="Sedán">Sedán</option>
+                    <option value="Berlina">Berlina</option>
+                    <option value="Descapotable">Descapotable</option>
+                    <option value="Coupé">Coupé</option>
+                    <option value="Pony car">Pony car/Muscle car</option>
+                    <option value="Deportivo">Deportivos/superdeportivos/Hypercar</option>
+                    <option value="Monovolumen">Monovolumen</option>
+                    <option value="Todoterreno">Todoterreno/SUV/crossover</option>
+                    <option value="Pick Up">Pick Up</option>
+                    <option value="Limusina">Limusina</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="id_estado"></label>
+                <select data-role="select" name="id_estado" id="id_estado">
+                    <option >--</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label for="id_marca"></label>
+                <select name="id_marca" id="id_marca">
+                    <option >--</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="id_usr"></label>
+                <select name="id_usr" id="id_usr">
+                    <option>--</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button class="button primary">Submit data</button>
+            </div>
+    </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
