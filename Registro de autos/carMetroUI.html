@@ -13,123 +13,154 @@
     <link href="path_to_metro/metro.css" rel="stylesheet">
     <link href="path_to_metro/metro-animation.css" rel="stylesheet">
     <link href="metro-icons.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
 </head>
 
 <body class="bg-dark">
+    <header data-role="html-container" data-insert-mode="replace" data-html-source="header.html"></header>
+    <div class="row flex-justify-center">
+        <div class="text-cap bg-white border bd-red border-size-4 cell-sm-7 cell-md-5 cell-lg-4">
 
-    <div class="img-container bg-white border bd-cyan border-size-5 cell-4 offset-4" >
-        
-        <form class="" id="formOtCar" method="POST" action="">
+            <form class="" id="formOtCar" method="POST" action="">
 
-            <div class="form-group">
-                <label for="id_coche">Digite la id del coche</label><br>
-                <input data-role="input" type="text" name="id_coche" id="id_coche" data-prepend="car">
+                <div class="form-group ">
+                    <label for="id_coche"><strong>Digite la id del coche</strong></label>
+                    <input data-role="input" type="text" name="id_coche" id="id_coche">
 
-            </div>
+                </div>
 
-            <div class="form-group">
-                <label for="id_movidoa">Tipo de combustible</label><br>
-                <select data-role="select" name="id_movidoa" id="id_movidoa">
-                    <option value="">--</option>
-                    <option value="gas natural">Gas natural</option>
-                    <option value="gasolina">Gasolina</option>
-                    <option value="diésel">Diésel</option>
-                    <option value="hidrógeno">Hidrógeno</option>
-                    <option value="biodiesel">Biodiesel</option>
-                    <option value="electricidad">Electricidad</option>
-                    <option value="GLP">GLP</option>
-                </select>
-            </div>
+                <div class="form-group">
+                    <label for="id_movidoa"><strong>Tipo de combustible</strong></label>
+                    <select data-role="select" name="id_movidoa" id="id_movidoa">
+                        <option value="">--</option>
+                        <option value="gas natural">Gas natural</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="diésel">Diésel</option>
+                        <option value="hidrógeno">Hidrógeno</option>
+                        <option value="biodiesel">Biodiesel</option>
+                        <option value="electricidad">Electricidad</option>
+                        <option value="GLP">GLP</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <label for="id_tipocoche">Tipo de coche <span class="mif-automobile"></span></label><br>
-                <select data-role="select" name="id_tipocoche" id="id_tipocoche">
-                    <option>--</option>
-                    <option value="Urbano">Urbano</option>
-                    <option value="Subcompacto">Subcompacto</option>
-                    <option value="Hatchback ">Hatchback / compacto</option>
-                    <option value="Familiar">Familiar</option>
-                    <option value="Sedán">Sedán</option>
-                    <option value="Berlina">Berlina</option>
-                    <option value="Descapotable">Descapotable</option>
-                    <option value="Coupé">Coupé</option>
-                    <option value="Pony car">Pony car/Muscle car</option>
-                    <option value="Deportivo">Deportivos/superdeportivos/Hypercar</option>
-                    <option value="Monovolumen">Monovolumen</option>
-                    <option value="Todoterreno">Todoterreno/SUV/crossover</option>
-                    <option value="Pick Up">Pick Up</option>
-                    <option value="Limusina">Limusina</option>
-                </select>
-            </div>
+                <div class="form-group">
+                    <label for="id_tipocoche"><strong>Tipo de coche</strong> <span class="mif-automobile"></span></label>
+                    <select data-role="select" name="id_tipocoche" id="id_tipocoche">
+                        <option>--</option>
+                        <option value="Urbano">Urbano</option>
+                        <option value="Subcompacto">Subcompacto</option>
+                        <option value="Hatchback ">Hatchback / compacto</option>
+                        <option value="Familiar">Familiar</option>
+                        <option value="Sedán">Sedán</option>
+                        <option value="Berlina">Berlina</option>
+                        <option value="Descapotable">Descapotable</option>
+                        <option value="Coupé">Coupé</option>
+                        <option value="Pony car">Pony car/Muscle car</option>
+                        <option value="Deportivo">Deportivos/superdeportivos/Hypercar</option>
+                        <option value="Monovolumen">Monovolumen</option>
+                        <option value="Todoterreno">Todoterreno/SUV/crossover</option>
+                        <option value="Pick Up">Pick Up</option>
+                        <option value="Limusina">Limusina</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <label for="id_estado"></label><br>
-                <select data-role="select" name="id_estado" id="id_estado">
-                    <option>--</option>
-                </select>
+                <div class="form-group">
+                    <label for="id_estado"><strong></strong></label>
+                    <select data-role="select" name="id_estado" id="id_estado">
+                        <option>--</option>
+                    </select>
 
-            </div>
+                </div>
 
-            <div class="form-group">
-                <label for="id_marca"></label><br>
-                <select name="id_marca" id="id_marca">
-                    <option>--</option>
-                </select>
-            </div>
+                <div class="form-group">
+                    <label for="id_marca"><strong></strong></label>
+                    <select name="id_marca" id="id_marca">
+                        <option>--</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <label for="id_usr"></label><br>
-                <select name="id_usr" id="id_usr">
-                    <option>--</option>
-                </select>
-            </div>
+                <div class="form-group">
+                    <label for="id_usr"><strong></strong></label>
+                    <select name="id_usr" id="id_usr">
+                        <option>--</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <label for="modelo">Modelo</label><br>
-                <input type="text" name="modelo" id="modelo" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="modelo"><strong>Modelo</strong></label>
+                    <input type="text" name="modelo" id="modelo" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <label for="anio">Año</label><br>
-                <input type="text" name="anio" id="anio" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="anio"><strong>Año</strong></label>
+                    <input type="text" name="anio" id="anio" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <label for="detalle">Detalles</label><br>
-                <input type="text" name="detalle" id="detalle" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="detalle"><strong>Detalles</strong></label>
+                    <input type="text" name="detalle" id="detalle" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <label for="caja">Caja</label><br>
-                <input type="text" name="caja" id="caja" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="caja"><strong>Caja</strong></label>
+                    <input type="text" name="caja" id="caja" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <label for="motor">Motor</label><br>
-                <input type="text" name="motor" id="motor" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="motor"><strong>Motor</strong></label>
+                    <input type="text" name="motor" id="motor" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <label for="fechapub">Fecha publicacion</label><br>
-                <input type="text" name="fechapub" id="fechapub" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="fechapub"><strong>Fecha publicacion</strong></label>
+                    <input type="text" name="fechapub" id="fechapub" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <label for="precio">Precio</label><br>
-                <input type="text" name="precio" id="precio" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="precio"><strong>Precio</strong></label>
+                    <input type="text" name="precio" id="precio" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <label for="moneda">Moneda</label><br>
-                <input type="text" name="moneda" id="moneda" data-role="input">
-            </div>
+                <div class="form-group">
+                    <label for="moneda"><strong>Moneda</strong></label>
+                    <input type="text" name="moneda" id="moneda" data-role="input">
+                </div>
 
-            <div class="form-group">
-                <button class="button primary">registrar</button>
-            </div>
-        </form>
+                <br>
+
+                <div class="form-group">
+                    <label for="cc_piv01"><strong>Descripcion 1</strong></label><br>
+                    <textarea data-role="textarea" id="cc_piv01" name="cc_piv01" maxlength="200" data-auto-size="true"
+                        class="mb-1" ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cc_piv02"><strong>Descripcion 1</strong></label><br>
+                    <textarea data-role="textarea" id="cc_piv02" name="cc_piv02" maxlength="200" data-auto-size="true"
+                        class="mb-1" ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cc_piv03"><strong>Descripcion 1</strong></label><br>
+                    <textarea data-role="textarea" id="cc_piv03" name="cc_piv03" maxlength="200" data-auto-size="true"
+                        class="mb-1" ></textarea>
+                </div>
+
+                <div>
+                    <label for="cc_destac"><strong>Destacado</strong></label><br>
+                    <textarea name="cc_destac" data-role="textarea" id="cc_destac" maxlength="200" data-auto-size="true" class="mb-1"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="button primary"><u><strong>Registrar</strong></u></button>
+                </div>
+
+            </form>
+        </div>
     </div>
-
 
 </body>
 
