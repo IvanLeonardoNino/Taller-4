@@ -16,18 +16,19 @@
 </head>
 
 <body class="bg-dark">
-    <div class="row ">
-        <div class="bg-white border bd-cyan border-size-5 cell-4 offset-4">
-        <form class="" id="formOtCar" method="POST" action="">
+
+    <div class="img-container bg-white border bd-cyan border-size-5 cell-4 offset-4" >
         
+        <form class="" id="formOtCar" method="POST" action="">
+
             <div class="form-group">
-                <label for="id_coche">Digite la id del coche</label>
-                <input type="text" name="id_coche" id="id_coche">
-                
+                <label for="id_coche">Digite la id del coche</label><br>
+                <input data-role="input" type="text" name="id_coche" id="id_coche" data-prepend="car">
+
             </div>
 
             <div class="form-group">
-                <label for="id_movidoa">Tipo de combustible</label>
+                <label for="id_movidoa">Tipo de combustible</label><br>
                 <select data-role="select" name="id_movidoa" id="id_movidoa">
                     <option value="">--</option>
                     <option value="gas natural">Gas natural</option>
@@ -39,11 +40,11 @@
                     <option value="GLP">GLP</option>
                 </select>
             </div>
-            
+
             <div class="form-group">
-                <label for="id_tipocoche">Tipo de coche <span class="mif-automobile"></span></label>
-                <select data-role="select"  name="id_tipocoche" id="id_tipocoche">
-                    <option >--</option>
+                <label for="id_tipocoche">Tipo de coche <span class="mif-automobile"></span></label><br>
+                <select data-role="select" name="id_tipocoche" id="id_tipocoche">
+                    <option>--</option>
                     <option value="Urbano">Urbano</option>
                     <option value="Subcompacto">Subcompacto</option>
                     <option value="Hatchback ">Hatchback / compacto</option>
@@ -62,33 +63,73 @@
             </div>
 
             <div class="form-group">
-                <label for="id_estado"></label>
+                <label for="id_estado"></label><br>
                 <select data-role="select" name="id_estado" id="id_estado">
-                    <option >--</option>
+                    <option>--</option>
                 </select>
 
             </div>
 
             <div class="form-group">
-                <label for="id_marca"></label>
+                <label for="id_marca"></label><br>
                 <select name="id_marca" id="id_marca">
-                    <option >--</option>
+                    <option>--</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label for="id_usr"></label>
+                <label for="id_usr"></label><br>
                 <select name="id_usr" id="id_usr">
                     <option>--</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <button class="button primary">Submit data</button>
+                <label for="modelo">Modelo</label><br>
+                <input type="text" name="modelo" id="modelo" data-role="input">
             </div>
-    </form>
-        </div>
+
+            <div class="form-group">
+                <label for="anio">Año</label><br>
+                <input type="text" name="anio" id="anio" data-role="input">
+            </div>
+
+            <div class="form-group">
+                <label for="detalle">Detalles</label><br>
+                <input type="text" name="detalle" id="detalle" data-role="input">
+            </div>
+
+            <div class="form-group">
+                <label for="caja">Caja</label><br>
+                <input type="text" name="caja" id="caja" data-role="input">
+            </div>
+
+            <div class="form-group">
+                <label for="motor">Motor</label><br>
+                <input type="text" name="motor" id="motor" data-role="input">
+            </div>
+
+            <div class="form-group">
+                <label for="fechapub">Fecha publicacion</label><br>
+                <input type="text" name="fechapub" id="fechapub" data-role="input">
+            </div>
+
+            <div class="form-group">
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" data-role="input">
+            </div>
+
+            <div class="form-group">
+                <label for="moneda">Moneda</label><br>
+                <input type="text" name="moneda" id="moneda" data-role="input">
+            </div>
+
+            <div class="form-group">
+                <button class="button primary">registrar</button>
+            </div>
+        </form>
     </div>
+
 
 </body>
 
