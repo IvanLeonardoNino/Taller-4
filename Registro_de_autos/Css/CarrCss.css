@@ -59,6 +59,13 @@ option {
     color:#78788c;
  }
 
+ input[type="date"]{
+    color:#78788c;
+ }
+ input[type="date"]::-webkit-inner-spin-button,::-webkit-calendar-picker-indicator{
+    color:#78788c;
+}
+
 textarea{
     width:100%;
     padding: 5px;
