@@ -1,18 +1,194 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="descripcion" content="pagina de registro" />
-    <meta name="autores" content="Ivan, Cruz, Cristian" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="nombre" content="Registro autos bootstrap">
-    <title>Registro Autos</title>
+    <title>RegistroAutos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
 </head>
+<body class="bg-secondary">
+    <div class="modal-dialog text-center">
+        <div class="col-sm-8">
+            <div class="modal-content">
+                
+                <h2 class="text-danger text-center">Registro Automotriz</h2>
+                <form class="col-12">
+                      <i class="fas fa-car"></i>
+                    <div class="form-group">
+                        <label for="id_coche"> <strong>Digite la id del coche</strong></label>
+                        
+                        <input type="text" class="form-control" placeholder="Id_Coche">
+                    
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="id_movidoa"> <strong>Tipo de Combustible</strong></label>
+                        <select class="form-control" id="id_movidoa">
+                            <option><small class="text-muted">Elegir opción</small></option>
+                            <option value="Gas natural" id="GN">Gas natural</option>
+                            <option value="Gasolina" id="GL">Gasolina</option>
+                            <option value="Diesel" id="DL">Diesel</option>
+                            <option value="Hidrogeno" id="HD">Hidrogeno</option>
+                            <option value="Biodiesel" id="BD">Biodiesel</option>
+                            <option value="Electricidad" id="EC">Electricidad</option>
+                            <option value="GLP" id="GLP">GLP</option>
+                            
+                        </select>
+                    </div>                    
 
-<body>
+                    <div class="form-group">
+                        <label for="id_tipocoche"><strong>Tipo de Coche</strong></label>
+                        <select class="form-control" id="id_tipocoche">
+                            <option><small class="text-muted">Elegir opción</small></option>
+                            <option value="Urbano" id="UN">Urbano</option>
+                            <option value="Subcompacto" id="SC">Subcompacto</option>
+                            <option value="Hatchback" id="HB">Hatchback</option>
+                            <option value="Familiar" id="FM">Familiar</option>
+                            <option value="Sedán" id="SD">Sedán</option>
+                            <option value="Berlina" id="BL">Berlina</option>
+                            <option value="Descapotable" id="DP">Descapotable</option>
+                            <option value="Coupé" id="CP">Coupé</option>
+                            <option value="Pony car" id="PC">Pony car</option>
+                            <option value="Deportivo" id="DO">Deportivo</option>
+                            <option value="Monovolumen" id="MV">Monovolumen</option>
+                            <option value="Pick Up" id="PU">Pick Up</option>
+                            <option value="Limusina" id="LM">Limusina</option>
+                            
+                        </select>
+                    </div>  
 
+                    <div class="form-group">
+                        <label for="id_estado"><strong>Estado Vehiculo</strong></label>
+                        <select class="form-control" id="id_estado">
+                            <option><small class="text-muted">Elegir opción</small></option>
+                            <option value="Nuevo" id="N">Nuevo</option>
+                            <option value="Usado" id="U">Usado</option>
+                            
+                            
+                        </select>
+                    </div>  
+
+                    <div class="form-group">
+                        <label for="id_marca"><strong>Marca del vehiculo</strong></label>
+                        <select class="form-control" id="id_marca">
+                            <option><small class="text-muted">Elegir opción</small></option>
+                            <option value="Renault" id="RT">Renault</option>
+                            <option value="Chevrolet" id="CL">Chevrolet</option>
+                            <option value="Mazda" id="MD">Mazda</option>
+                            <option value="Nissan" id="NS">Nissan</option>
+                            <option value="Kia" id="K">Kia</option>
+                            <option value="Toyota" id="TT">Toyota</option>
+                            <option value="Volkswagen" id="VW">Volkswagen</option>
+                            <option value="Suzuki" id="SZ">Suzuki</option>
+                            <option value="Ford" id="FR">Ford</option>
+                            <option value="Hyundai" id="HY">Hyundai</option>
+                            <option value="Tesla" id="TZ">Tesla</option>
+                            <option value="Audi" id="AU">Audi</option>
+                            <option value="Honda" id="HN">Honda</option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_usr"><strong>Estado Usuario</strong></label>
+                        <select class="form-control" id="id_usr">
+                            <option><small class="text-muted">Elegir opción</small></option>
+                            <option value="Nuevo" id="N">Nuevo</option>
+                            <option value="Recurrente" id="R">Recurrente</option>
+                            
+                        </select>
+                    </div> 
+
+                    <div class="form-group">
+                        <label for="modelo"><strong>Modelo del coche</strong></label>
+                        <input type="text" class="form-control" placeholder="Modelo del vehiculo" maxlength="60">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="año"><strong>Año</strong></label>
+                        <input type="text" class="form-control" placeholder="Año del vehiculo" maxlength="4">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="detalle"><strong>Detalles</strong></label>
+                        <input type="text" class="form-control" placeholder="Detalles">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caja"><strong>Modelo de Caja</strong></label>
+                        <input type="text" class="form-control" placeholder="Modelo de Caja">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="motor"><strong>Tipo de motor</strong></label>
+                        <input type="text" class="form-control" placeholder="Tipo de motor">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fechapub"><strong>Fecha de publicacion</strong></label>
+                        <input type="date" class="form-control" placeholder="Fecha Publicacion">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="precio"><strong>Precio</strong></label>
+                        <input type="textf" class="form-control" placeholder="Precio">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="moneda"><strong>Moneda</strong></label>
+                        <input type="text" class="form-control" placeholder="Moneda" maxlength="3">
+                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cc_pic01"><strong>Descripcion #1</strong></label>
+                        <textarea class="form-control" rows="3"></textarea >
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cc_pic02"><strong>Descripcion #2</strong></label>
+                        <textarea class="form-control" rows="3"></textarea >
+                            
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cc_pic03"><strong>Descripcion #3</strong></label>
+                        <textarea class="form-control" rows="3"></textarea >
+                            
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cc_destac"><strong>Destacado</strong></label>
+                        <textarea class="form-control" rows="3"></textarea >
+                            
+                    </div>
+
+                    <button type="button" class="btn btn-danger"><i class="fas fa-sign-in-alt"></i>  Registrar</button>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    
 </body>
-
 </html>
